@@ -1,0 +1,283 @@
+/* ==========================================================================
+   Reset @see: https://www.joshwcomeau.com/css/custom-css-reset/
+   ========================================================================== */
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Fluid Typography
+   ========================================================================== */
+
+:root {
+  --step-1: clamp(2.5rem, 1.804rem + 3.478vw, 4.5rem);
+  --step-2: clamp(2rem, 1.478rem + 2.609vw, 3.5rem);
+  --step-3: clamp(1.75rem, 1.315rem + 2.174vw, 3rem);
+  --step-4: clamp(1.5rem, 1.152rem + 1.739vw, 2.5rem);
+  --step-5: clamp(1.25rem, 0.989rem + 1.304vw, 2rem);
+  --step-6: clamp(1.125rem, 0.995rem + 0.652vw, 1.5rem);
+  --step-7: clamp(1rem, 0.826rem + 0.87vw, 1.5rem);
+}
+
+/* Colors
+   ========================================================================== */
+
+:root {
+  --clr-black: oklch(0% 0 0);
+  --clr-blue: oklch(45.2% 0.31313625765874376 264.05300810418345);
+  --clr-off-white: oklch(98.2% 0.0041 91.45);
+  --clr-white: oklch(100% 0 0);
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+/* trocchi-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Trocchi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/trocchi-v17-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("fonts/trocchi-v17-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+}
+
+/* oxygen-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/oxygen-v15-latin-300.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("fonts/oxygen-v15-latin-300.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+}
+/* oxygen-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/oxygen-v15-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("fonts/oxygen-v15-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+}
+/* oxygen-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/oxygen-v15-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("fonts/oxygen-v15-latin-700.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+}
+
+/* ==========================================================================
+   Basic Styling
+   ========================================================================== */
+
+:root {
+  font-size: calc(1rem + 0.25vw);
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+  font-size: var(--step-7);
+  font-weight: 400;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.subtitle {
+  color: var(--clr-blue);
+  font-family: "Trocchi", serif;
+  font-weight: 700;
+  line-height: 1.222;
+}
+
+h1 {
+  font-size: var(--step-1);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+h4 {
+  font-size: var(--step-4);
+}
+
+h5 {
+  font-size: var(--step-5);
+}
+
+h6 {
+  font-size: var(--step-6);
+}
+
+a {
+  color: var(--clr-blue);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: var(--step-4);
+}
+
+.portrait {
+  flex-shrink: 1;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & * {
+    flex: 1 0 50%;
+  }
+}
+
+.card {
+  container-name: card;
+  container-type: inline-size;
+  max-width: 55rem;
+  padding: clamp(2rem, 1.304rem + 3.478vw, 4rem);
+  border-radius: 10px;
+  border: 2px solid var(--clr-blue);
+  margin: 0 auto;
+  background-color: var(--clr-off-white);
+}
+
+.contact__list {
+  padding-left: 0;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & svg {
+    flex-shrink: 0;
+    width: 1.5em;
+    height: auto;
+    color: #0000ff;
+    stroke: currentColor;
+  }
+
+  & a {
+    word-break: break-all;
+  }
+}
+
+.contact__item + .contact__item {
+  margin-top: 0.8rem;
+}
+
+@container card (width > 32rem) {
+  .wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@container card (width > 40rem) {
+  .wrapper {
+    gap: 4rem;
+  }
+}
