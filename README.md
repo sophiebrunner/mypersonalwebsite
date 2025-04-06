@@ -1,1 +1,1 @@
-# My personal website
+# Sophie Brunner — personal website
