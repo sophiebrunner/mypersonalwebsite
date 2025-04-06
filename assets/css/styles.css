@@ -138,9 +138,12 @@ footer {
   padding-inline: var(--space-s);
 }
 
-header,
-footer {
+header {
   margin-block: var(--space-l-xl);
+}
+
+footer {
+  margin-block: var(--space-xl-2xl);
 }
 
 section + section {
@@ -287,7 +290,8 @@ p + p {
 
 .hero__image img {
   display: block;
-  max-width: calc(100% - 2 * 4px);
+  width: 100%;
+  max-width: calc(22.5rem - 2 * 4px);
   border: 4px solid var(--clr-medium-blue);
   border-radius: 50%;
 }
