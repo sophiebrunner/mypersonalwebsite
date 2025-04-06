@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="max-width max-width--default">
       <fieldset class="theme-switcher" data-theme-switcher>
         <legend class="theme-switcher__label">
           How do you want to get to know me?
@@ -27,7 +27,7 @@
       </fieldset>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero max-width max-width--default">
         <h1>Sophie Brunner</h1>
         <div class="hero__banner serious">
           <div class="hero__image">
@@ -60,7 +60,7 @@
           </p>
         </div>
       </section>
-      <section class="about">
+      <section class="about max-width max-width--default">
         <h2>About me</h2>
         <div class="serious">
           <h3>Present</h3>
@@ -117,12 +117,99 @@
           <p>
             My interest in digital media had always been present. I studied
             media as a minor subject and managed the NDR Radiophilharmonie's
-            website as a student assistant. Over time, this interest evolved
+            website as a student assistant. Over time, I evolved this interest
             into a new professional path.
           </p>
         </div>
       </section>
-      <section class="website serious">
+      <section class="projects">
+        <div class="max-width max-width--default">
+          <h2 class="max-width max-width--default">Projects</h2>
+          <p class="max-width max-width--default">
+            Descriptions of exemplary corporate projects I have worked on:
+          </p>
+        </div>
+        <div class="projects__wrapper max-width max-width--large">
+          <div class="project">
+            <h3 class="project__title">Sustainability Dashboard</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M207.06,72.67A111.24,111.24,0,0,0,128,40h-.4C66.07,40.21,16,91,16,153.13V176a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V152A111.25,111.25,0,0,0,207.06,72.67ZM224,176H119.71l54.76-75.3a8,8,0,0,0-12.94-9.42L99.92,176H32V153.13c0-3.08.15-6.12.43-9.13H56a8,8,0,0,0,0-16H35.27c10.32-38.86,44-68.24,84.73-71.66V80a8,8,0,0,0,16,0V56.33A96.14,96.14,0,0,1,221,128H200a8,8,0,0,0,0,16h23.67c.21,2.65.33,5.31.33,8Z"
+              ></path>
+            </svg>
+            <p>
+              In this project, the goal was to create an accessible dashboard to
+              showcase the client's efforts toward achieving the United Nations'
+              17 Sustainable Development Goals.
+            </p>
+            <p>
+              While the backend team handled data structuring, I focused on
+              making the data presentation in the frontend both accessible and
+              user-friendly using
+              <strog>semantic HTML</strog>.
+            </p>
+            <p>
+              We applied a
+              <strong>progressive enhancement approach</strong>, ensuring core
+              information remained accessible to all users. Special attention
+              was given to animations, where we implemented controls to
+              <strong>stop SVG animations</strong> for users who might be
+              affected.
+            </p>
+            <p>
+              Complex UI components like cards with flip effects and
+              <strong>accessible tooltips and toggle tips</strong> were
+              implemented to ensure a seamless user experience.
+            </p>
+          </div>
+          <div class="project">
+            <h3 class="project__title">An accessible test application</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+              ></path>
+            </svg>
+            <p>
+              For this project, we aimed to develop an accessible language test
+              application,
+              <strong>building on a previous accessible prototype</strong>.
+            </p>
+            <p>
+              The challenge was to extend the functionality of the JavaScript
+              code so that user responses could be automatically extracted from
+              the HTML markup and displayed at the end of the test.
+            </p>
+            <p>
+              Since the application needed to <strong>function offline</strong>,
+              we ensured it could
+              <strong>run locally via the file protocol</strong> without
+              requiring a backend or database.
+            </p>
+            <p>
+              Results were stored using the browser's native print
+              functionality, making the app easy to use without an internet
+              connection while maintaining full accessibility.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="website serious max-width max-width--default">
         <h2>My approach to web development</h2>
         <p>
           I learned web development from teachers who emphasized the
@@ -152,7 +239,7 @@
           topic.
         </p>
       </section>
-      <section class="contact">
+      <footer class="contact max-width max-width--default">
         <h2>Contact</h2>
         <ul role="list" class="contact__list">
           <li class="contact__item">
@@ -202,7 +289,7 @@
             >
           </li>
         </ul>
-      </section>
+      </footer>
     </main>
     <script src="assets/script.js"></script>
   </body>
