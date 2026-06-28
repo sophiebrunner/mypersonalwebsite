@@ -186,6 +186,7 @@ h3 {
 }
 
 h4 {
+  margin-block: var(--space-m) var(--space-xs);
   font-size: var(--step-2);
 }
 
