@@ -216,6 +216,10 @@ p + p {
   margin-top: 1rem;
 }
 
+svg {
+  vertical-align: middle;
+}
+
 .list {
   list-style: none;
 }
@@ -376,4 +380,68 @@ p + p {
 
 .contact__item + .contact__item {
   margin-top: 0.8rem;
+}
+
+/* 
+ * Utility class to hide content visually while keeping it screen reader-accessible.
+ * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+ */
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+dialog {
+  border: 3px solid darkred;
+  border-radius: 10px;
+
+  & h1 {
+    margin: 0;
+    font-size: var(--step-2);
+  }
+
+  & h2 {
+    font-size: var(--step-1);
+  }
+}
+
+.dialog-button {
+  display: block;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+.dialog-button--vampire {
+  transform: rotate(-0.15turn);
+  cursor: url("../icons/vampire.png"), pointer;
+}
+
+.dialog-button--open {
+  width: var(--space-3xl);
+
+  & svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.dialog-button--close {
+  padding: var(--space-3xs);
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
 }

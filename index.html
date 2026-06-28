@@ -15,304 +15,188 @@
 
   <body>
     <header class="max-width max-width--default">
-      <fieldset class="theme-switcher" data-theme-switcher>
-        <legend class="theme-switcher__label">
-          How do you want to get to know me?
-        </legend>
-        <div class="theme-switcher__buttons">
-          <button class="btn" data-theme="serious">
-            <span aria-hidden="true">🤓</span> Serious
-          </button>
-          <button class="btn" data-theme="fun">
-            <span aria-hidden="true">🥸</span> Fun
-          </button>
-        </div>
-      </fieldset>
+      <a href="/">Sophie Brunner</a>
+      <nav>
+        <span id="nav-heading">What do you want to know about me?</span>
+        <ol role="list" aria-labelledby="nav-heading">
+          <li><a href="/pages/work.html">🤓 Work</a></li>
+          <li><a href="">🗺️ Travels</a></li>
+        </ol>
+      </nav>
     </header>
     <main>
-      <section class="hero max-width max-width--default">
+      <section>
         <h1>Sophie Brunner</h1>
-        <div class="hero__banner serious">
-          <div class="hero__image">
-            <img
-              src="/assets/img/profile--serious.jpeg"
-              alt="Sophie Brunner"
-              width="600"
-              loading="lazy"
-            />
-          </div>
-          <p>
-            <strong>Web developer</strong> based in <strong>Nuremberg</strong>,
-            Germany — specializing in <strong>frontend</strong> and
-            <strong>accessibility</strong>.
-          </p>
-        </div>
-        <div class="fun">
-          <p>Hello world 👋</p>
-          <p>
-            I'm Sophie, a <span class="fun" aria-hidden="true">👩🏻‍💻</span>
-            <strong>Web Developer</strong> from Nuremberg, specializing in
-            Accessibility.
-          </p>
-          <p class="fun">
-            This is my <span aria-hidden="true">🤪</span>
-            <span class="text-gradient">fun</span>
-            <span aria-hidden="true">🦦</span> little side project aka
-            <span aria-hidden="true">✨</span> my personal website
-            <span aria-hidden="true">✨</span>.
-          </p>
-        </div>
-      </section>
-      <section class="about max-width max-width--default">
-        <h2>About me</h2>
-        <div class="serious">
-          <h3>Present</h3>
-          <p>
-            I'm working at the intersection of <strong>design</strong>,
-            <strong>content</strong>, and <strong>technology</strong>
-            to create websites where users truly feel at home 🏡.
-          </p>
-          <h4>Things I can 💪 and love ❤️‍🔥 to do</h4>
-          <ul>
-            <li>
-              developing accessible frontends using
-              <strong>
-                <abbr title="HyperText Markup Language">HTML</abbr></strong
-              >,
-              <strong> <abbr title="Cascading Style Sheets">CSS</abbr></strong>
-              and <strong>JavaScript</strong>,
-            </li>
-            <li>
-              integrate frontends into
-              <strong>Content Management Systems</strong> (mainly
-              <strong>TYPO3</strong>) and
-              <strong>Vanilla JavaScript applications</strong>,
-            </li>
-            <li>
-              <strong>testing</strong> websites and web apps according to
-              <strong
-                ><abbr title="Web Content Accessibility Guidelines"
-                  >WCAG</abbr
-                ></strong
+        <h2>Let's have a dialog!</h2>
+        <button
+          class="dialog-button dialog-button--open dialog-button--vampire"
+          command="show-modal"
+          commandfor="vampire-dialog"
+          aria-label="Open vampire dialog"
+        >
+          <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg
+            fill="#000000"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 450.638 450.638"
+            aria-hidden="true"
+          >
+            <g>
+              <path
+                d="M133.546,176.083c-73.354-5.999-104.597,23.678-105.891,24.944c-1.88,1.839-2.015,4.818-0.309,6.818
+		c0.543,0.637,13.385,15.466,42.172,30.824c5.759,16.273,16.277,35.286,35.415,52.662c0.938,0.851,2.141,1.298,3.362,1.298
+		c0.637,0,1.278-0.121,1.889-0.371c1.783-0.728,2.989-2.414,3.102-4.337l1.787-30.519c31.737,9.668,70.58,14.959,110.245,14.959
+		c39.665,0,78.51-5.291,110.246-14.959l1.786,30.519c0.112,1.923,1.318,3.609,3.102,4.337c0.611,0.25,1.252,0.371,1.889,0.371
+		c1.221,0,2.425-0.447,3.362-1.298c19.138-17.376,29.657-36.389,35.415-52.662c28.786-15.358,41.63-30.188,42.172-30.823
+		c1.707-2.001,1.572-4.98-0.308-6.819c-1.294-1.267-32.545-30.945-105.892-24.944c-35.121,2.874-63.382,4.986-91.676,4.988
+		C197.122,181.073,168.797,178.966,133.546,176.083z M168.194,237.063l2.145-48.187c27.865,1.875,42.923,2.304,49.98,2.376v48.859
+		C200.524,239.932,183.021,238.703,168.194,237.063z M230.318,191.253c7.057-0.072,22.115-0.501,49.982-2.377l2.142,48.193
+		c-14.816,1.637-32.315,2.863-52.124,3.042V191.253z M160.359,188.181l-2.121,47.672c-20.864-2.767-35.174-6.148-41.504-7.813
+		l1.88-42.703c4.509,0.083,9.208,0.309,14.115,0.712C142.955,186.886,152.129,187.589,160.359,188.181z M38.624,205.071
+		c4.294-3.013,12.144-7.697,23.895-11.752c-1.261,13.008,2.701,30.259,3.013,31.62C51.945,216.816,43.146,209.341,38.624,205.071z
+		 M103.947,276.341c-11.791-12.603-20.345-26.875-25.589-42.624c-0.012-0.038-0.024-0.075-0.037-0.113
+		c-1.521-4.586-2.777-9.29-3.732-14.123c-2.643-13.363-2.28-24.127-1.852-29.222c9.874-2.532,21.78-4.431,35.864-4.865
+		L103.947,276.341z M225.318,262.362c-39.692,0-78.427-5.415-109.642-15.261l0.518-8.849c14.288,3.649,52.769,11.882,109.124,11.882
+		c56.355,0,94.837-8.232,109.125-11.882l0.519,8.849C303.746,256.947,265.012,262.362,225.318,262.362z M346.688,276.326
+		l-4.653-90.93c14.085,0.434,25.991,2.333,35.863,4.864C378.845,201.604,379.403,241.221,346.688,276.326z M385.105,224.939
+		c0.312-1.361,3.861-18.129,3.013-31.62c11.758,4.057,19.608,8.742,23.896,11.751C407.489,209.343,398.689,216.817,385.105,224.939z
+		 M317.907,186.049c4.907-0.401,9.606-0.628,14.115-0.711l1.881,42.706c-6.325,1.667-20.622,5.052-41.504,7.817l-2.119-47.681
+		C298.509,187.589,307.683,186.886,317.907,186.049z"
+              />
+              <path
+                d="M448.853,194.887c-0.305-0.256-30.876-25.843-66.415-49.532c-48.688-32.453-83.327-46.027-102.938-40.353
+		c-4.435,1.283-8.408,2.568-12.25,3.811c-13.094,4.234-23.44,7.58-41.931,7.759c-18.489-0.179-28.836-3.524-41.929-7.759
+		c-3.843-1.242-7.816-2.527-12.252-3.811c-19.617-5.674-54.251,7.9-102.938,40.353c-35.539,23.689-66.11,49.276-66.415,49.532
+		c-1.805,1.516-2.307,4.086-1.204,6.169c0.789,1.49,19.747,36.909,56.905,72.843c21.868,21.147,45.499,38.007,70.238,50.112
+		c31.024,15.182,63.86,22.88,97.594,22.88c33.734,0,66.569-7.698,97.595-22.88c24.738-12.105,48.37-28.966,70.237-50.112
+		c37.158-35.934,56.117-71.352,56.906-72.843C451.159,198.973,450.657,196.403,448.853,194.887z M386.199,266.709
+		c-33.108,32.017-87.895,70.182-160.881,70.182c-72.866,0-127.585-38.048-160.657-69.966
+		c-29.473-28.444-47.519-57.234-53.252-67.035c35.535-29.311,124.201-94.753,156.949-85.282c4.286,1.24,8.184,2.501,11.954,3.721
+		c13.366,4.322,24.91,8.055,44.959,8.244c0.016,0,0.031,0,0.048,0c0.008,0,0.015-0.002,0.023-0.002c0.008,0,0.016,0.002,0.023,0.002
+		c20.05-0.189,31.594-3.922,44.961-8.245c3.77-1.219,7.667-2.479,11.952-3.72c32.745-9.463,121.414,55.975,156.952,85.284
+		C433.522,209.661,415.592,238.288,386.199,266.709z"
+              />
+            </g>
+          </svg>
+        </button>
+        <dialog id="vampire-dialog">
+          <header class="dialog-header">
+            <h1>Vampires</h1>
+            <button
+              commandfor="vampire-dialog"
+              command="close"
+              aria-label="Close"
+              class="dialog-button dialog-button--close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
               >
-              and
-              <strong>
-                <abbr
-                  title="Barrierefreie-Informationstechnik-Verordnung
-              "
-                  lang="de"
-                  >BITV</abbr
-                >
-              </strong>
-              standards,
+                <path
+                  d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <p>I love vampire movies and series 🧛🩸🌖.</p>
+          <h2>My favorites are</h2>
+          <ul role="list">
+            <li>
+              <b class="movie-title">Buffy the Vampire Slayer</b> – best
+              selection of characters and demons. My favorites:
+              <ul>
+                <li>
+                  <a href="https://buffy.fandom.com/wiki/Sweet"
+                    >Sweet – so charming, so musical 🎶</a
+                  >
+                </li>
+                <li>
+                  <a href="https://buffy.fandom.com/wiki/Balthazar"
+                    >Balthazar – emotional regulation of a teenager in puberty;
+                    make sure to keep him moist 🥴</a
+                  >
+                </li>
+              </ul>
             </li>
             <li>
-              <strong>quality assurance</strong> with manual and automated
-              testing, <strong>documentation</strong> of coding standards and
-              user manuals for projects.
+              <b class="movie-title">What We Do in the Shadows</b> – with the
+              best intro song (You're dead your're dead you're dead) and the
+              most accurate characterization of an energy vampire
+            </li>
+            <li>
+              <b class="movie-title">Hotel Transylvania (1-4)</b> – favorite
+              scene: the mean octopus coming to live after listening to some
+              dope music from old Van Helsing
+            </li>
+            <li>
+              <b class="movie-title">Der kleine Vampir</b> (German) – Rüdiger
+              von Schlotterstein ftw
             </li>
           </ul>
-          <h3>Past</h3>
-          <p>
-            Before that, I worked in various roles as a
-            <strong>project manager</strong> and <strong>educator</strong>. With
-            my master's degree in <strong>cultural studies</strong>,
-            <strong>musicology</strong>, and <strong>education</strong>, I
-            organized music education projects for the
-            <strong>NDR Radiophilharmonie</strong> and the
-            <strong>Bavarian Radio Symphony Orchestra</strong>, and later taught
-            at a general education school.
-          </p>
-          <p>
-            Even back then, my work centered around
-            <strong>structuring information</strong>, understanding
-            <strong>different perspectives</strong>, and
-            <strong>communicating clearly</strong> — skills that continue to
-            shape my approach to development today.
-          </p>
-          <p>
-            My interest in digital media had always been present. I studied
-            media as a minor subject and managed the NDR Radiophilharmonie's
-            website as a student assistant. Over time, I evolved this interest
-            into a new professional path.
-          </p>
-        </div>
-        <div class="fun">
-          <p>
-            <span aria-hidden="true">🚧 🛠️ 👷🏻‍♀️ 🔧</span> Work in progress.
-            <span aria-hidden="true">🔨 🪚 🦺 🔩</span>
-          </p>
-        </div>
+          <h2>No gos</h2>
+          <ul role="list">
+            <li>
+              <b class="movie-title">Twilight</b> – why is the female main
+              character constantly helpless?!
+            </li>
+          </ul>
+        </dialog>
       </section>
-      <section class="projects serious">
-        <div class="max-width max-width--default">
-          <h2 class="max-width max-width--default">Projects</h2>
-          <p class="max-width max-width--default">
-            Descriptions of exemplary corporate projects I have worked on:
-          </p>
-        </div>
-        <div class="projects__wrapper max-width max-width--large">
-          <div class="project">
-            <h3 class="project__title">Sustainability Dashboard</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M207.06,72.67A111.24,111.24,0,0,0,128,40h-.4C66.07,40.21,16,91,16,153.13V176a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V152A111.25,111.25,0,0,0,207.06,72.67ZM224,176H119.71l54.76-75.3a8,8,0,0,0-12.94-9.42L99.92,176H32V153.13c0-3.08.15-6.12.43-9.13H56a8,8,0,0,0,0-16H35.27c10.32-38.86,44-68.24,84.73-71.66V80a8,8,0,0,0,16,0V56.33A96.14,96.14,0,0,1,221,128H200a8,8,0,0,0,0,16h23.67c.21,2.65.33,5.31.33,8Z"
-              ></path>
-            </svg>
-            <p>
-              In this project, the goal was to create an accessible dashboard to
-              showcase the client's efforts toward achieving the United Nations'
-              17 Sustainable Development Goals.
-            </p>
-            <p>
-              While the backend team handled data structuring, I focused on
-              making the data presentation in the frontend both accessible and
-              user-friendly using
-              <strog>semantic HTML</strog>.
-            </p>
-            <p>
-              We applied a
-              <strong>progressive enhancement approach</strong>, ensuring core
-              information remained accessible to all users. Special attention
-              was given to animations, where we implemented controls to
-              <strong>stop SVG animations</strong> for users who might be
-              affected.
-            </p>
-            <p>
-              Complex UI components like cards with flip effects and
-              <strong>accessible tooltips and toggle tips</strong> were
-              implemented to ensure a seamless user experience.
-            </p>
-          </div>
-          <div class="project">
-            <h3 class="project__title">Accessible test application</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
-              ></path>
-            </svg>
-            <p>
-              For this project, we aimed to develop an accessible language test
-              application,
-              <strong>building on a previous accessible prototype</strong>.
-            </p>
-            <p>
-              The challenge was to extend the functionality of the JavaScript
-              code so that user responses could be automatically extracted from
-              the HTML markup and displayed at the end of the test.
-            </p>
-            <p>
-              Since the application needed to <strong>function offline</strong>,
-              we ensured it could
-              <strong>run locally via the file protocol</strong> without
-              requiring a backend or database.
-            </p>
-            <p>
-              Results were stored using the browser's native print
-              functionality, making the app easy to use without an internet
-              connection while maintaining full accessibility.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="website serious max-width max-width--default">
-        <h2>My approach to web development</h2>
-        <p>
-          I learned web development from teachers who emphasized the
-          <strong>fundamentals</strong>: HTML, CSS, and JavaScript. I was only
-          introduced to frameworks once I understood how things work under the
-          hood.
-        </p>
-        <p>
-          One sentence that stuck with me is:
-          <q>You don't need a drill to hammer a nail into the wall.</q>
-          <strong>Tools</strong> and <strong>frameworks</strong> can be
-          incredibly useful, but they must provide real value. For this website,
-          I built on the basics — plain and simple.
-        </p>
-        <p>
-          When collaborating with <strong>designers</strong>, I deeply respect
-          their work and strive to translate it as faithfully as possible into
-          the digital space. However, I also recognize that the web is
-          inherently unpredictable, and as a front-end developer, I can only
-          make suggestions about how the browser will interpret my code. I draw
-          a lot of inspiration from the insights of
-          <a
-            href="https://beyondtellerrand.com/events/berlin-2024/speakers/miriam-suzanne"
-            >Miriam Suzanne</a
-          >
-          and <a href="https://resilientwebdesign.com/">Jeremy Keith</a> on this
-          topic.
-        </p>
-      </section>
-      <footer class="contact max-width max-width--default">
-        <h2>Contact</h2>
-        <ul role="list" class="contact__list">
-          <li class="contact__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
-              ></path>
-            </svg>
-            <a href="https://www.linkedin.com/in/sophie-brunner-060161165/"
-              >LinkedIn</a
-            >
-          </li>
-          <li class="contact__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <path
-                d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
-              ></path></svg
-            ><a href="https://github.com/sophiebrunner">GitHub</a>
-          </li>
-          <li class="contact__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <path
-                d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
-              ></path></svg
-            ><a href="mailto:s.brunner.dev@gmail.com"
-              >s.brunner.dev@gmail.com</a
-            >
-          </li>
-        </ul>
-      </footer>
     </main>
+    <footer class="contact max-width max-width--default">
+      <h2>Contact</h2>
+      <ul role="list" class="contact__list">
+        <li class="contact__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+            ></path>
+          </svg>
+          <a href="https://www.linkedin.com/in/sophie-brunner-060161165/"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="contact__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+            ></path></svg
+          ><a href="https://github.com/sophiebrunner">GitHub</a>
+        </li>
+        <li class="contact__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+            ></path></svg
+          ><a href="mailto:s.brunner.dev@gmail.com">s.brunner.dev@gmail.com</a>
+        </li>
+      </ul>
+    </footer>
     <script src="assets/script.js"></script>
   </body>
 </html>
